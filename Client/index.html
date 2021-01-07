@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+     <title>Hat Game - Room : BGDS</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <header>
+          <h1>Hat Game - Room : BGDS</h1>
+          <p2>Bob Geldof Dolphin Sanctuary</p>
+     </header>
+     <div class="scoreboard">
+          <div id="team1_label" class="score_label">Team 1</div>
+          <div id="team2_label" class="score_label">Team 2</div>
+          <span id="team1_score">0</span>:<span id="team2_score">0</span>
+     </div>
+     <div class="game_status">
+          <div id="pick_status">
+               <p>Player 1 is picking cards. Team 1 is guessing:</p>
+          </div>
+          <div id="game_timer">
+               <p>59 seconds remain</p>
+          </div>
+          <div class="words_count_container">
+               <div id="total_words" class="word_counter">
+                    <div class="word_count_header">Total</div>
+                    <div class="word_count_value" id="total_words_value">30</div>
+               </div>
+               <div id="remaining_words" class="word_counter">
+                    <div class="word_count_header">Remaining</div>
+                    <div class="word_count_value" id="remaining_words_value">15</div>
+               </div>
+               <div id="passed_words" class="word_counter">
+                    <div class="word_count_header">Skipped</div>
+                    <div class="word_count_value" id="passed_words_value">5</div>
+               </div>
+          </div>
+     </div>
+
+
+     </div>
+
+     <div class="picker_options">
+          <input type="button" id="player_pass" class="picker_button" value="Pass">
+          <input type="button" id="player_correct" class="picker_button" value="Correct">
+     </div>
+     <div class="card_container">
+          <div class="word_card">
+               <div id="card_phrase">
+                    <h2>On Her Majesty's Secret Service</h2>
+               </div>
+               <div id="card_clue">
+                    <p>This is a clue/quote to help the picker understand the card.</p>
+               </div>
+               <div id="card_category">
+                    <p>Category: film</p>
+               </div>
+          </div>
+     </div>
+</body>

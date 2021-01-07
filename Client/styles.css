@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color:#1C1E28;
+    color: white;
+}
+
+header {
+    background-color: #C3C3C3;
+    color: #05061B;
+    padding: 15px;
+    text-align: center;
+}
+
+.scoreboard {
+    position: relative;
+    width: 200px;
+    border: 3px solid white;
+    margin: 15px auto;
+    font-size: 40px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.score_label {
+    background-color:#8A5A00;
+    border:  1px solid white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 5px;
+}
+
+#team1_label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform:  translateX(-50%) translateY(-50%);
+}
+
+#team2_label {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform:  translateX(50%) translateY(-50%);
+}
+
+.game_status {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin: 10px auto;
+    align-items: center;
+}
+.words_count_container {
+    display: flex;
+    margin: 10px;
+}
+
+#pick_status {
+    color: red;
+}
+.word_counter {
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 3px;
+    
+}
+.picker_options {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.picker_button {
+    flex-grow: 2;
+    max-width: 300px;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card_container {
+    max-width: 225px;    
+    margin: 20px auto;    
+}
+.word_card {
+    margin: 20px auto;
+    background-color: black;
+    text-align: center;
+    border: 5px white solid;
+    width: 100%;
+    padding-top: 140%;
+    position: relative;
+    border-radius: 4px;
+}
+
+.word_card * {
+    font-family: 'Architects Daughter', cursive;
+    padding: 2px;
+}
+
+#card_phrase {
+    position: absolute;
+    top: 0;
+    border-bottom: 1px gray dashed;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#card_category {
+    position: absolute;
+    top: 50%;
+}
+
+#card_clue {
+    position: absolute;
+    bottom: 0;
+    border-top: 1px gray dashed;
+}
