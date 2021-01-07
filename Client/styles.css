@@ -12,10 +12,50 @@ body {
 }
 
 header {
+    position: relative;
     background-color: #C3C3C3;
     color: #05061B;
     padding: 15px;
     text-align: center;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.button {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: cornsilk;
+    border-radius: 4px;
+    border: 1px blue solid;
+}
+
+.team_list  {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: cornsilk;
+    border-radius: 4px;
+    border: 1px blue solid;
+}
+
+.player_menu {
+    display: flex;
+    margin-top: -10px;
+}
+.utility_menu {
+    position: absolute;
+    top: 46px;
+    left: 10px;
+    background-color: #2D3040;
+    text-align: center;
+    border-radius: 4px;
+    border: 3px black solid;
 }
 
 .scoreboard {
